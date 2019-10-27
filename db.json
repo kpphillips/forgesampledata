@@ -1,0 +1,72 @@
+{
+    "jsonapi": {
+      "version": "1.0"
+    },
+    "links": {
+      "self": {
+        "href": "/project/v1/hubs"
+      }
+    },
+    "data": [
+      {
+        "type": "hubs",
+        "id": "a.hub.id.123",
+        "attributes": {
+          "name": "my team hub",
+          "extension": {
+            "type": "hubs:autodesk.core:Hub",
+            "version": "1.0",
+            "schema": {
+              "href": "/schema/v1/versions/hubs%3Aautodesk.core%3AHub-1.0"
+            },
+            "data": {}
+          },
+          "region": "US"
+        },
+        "links": {
+          "self": {
+            "href": "/project/v1/hubs/a.hub.id.123"
+          }
+        },
+        "relationships": {
+          "projects": {
+            "links": {
+              "related": {
+                "href": "/project/v1/hubs/a.hub.id.123/projects"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "hubs",
+        "id": "a.hub.id.456",
+        "attributes": {
+          "name": "my personal hub",
+          "extension": {
+            "type": "hubs:autodesk.a360:PersonalHub",
+            "version": "1.0",
+            "schema": {
+              "href": "/schema/v1/versions/hubs%3Aautodesk.a360%3APersonalHub-1.0"
+            },
+            "data": {}
+          },
+          "region": "US"
+        },
+        "links": {
+          "self": {
+            "href": "/project/v1/hubs/a.hub.id.456"
+          }
+        },
+        "relationships": {
+          "projects": {
+            "links": {
+              "related": {
+                "href": "/project/v1/hubs/a.hub.id.456/projects"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
